@@ -7,3 +7,10 @@
  */
 @import 'build/development/helloworld/resources/helloworld-all.css';
 
+.x-toolbar-footer {
+    background: none;
+
+}
+div#ext-gen1068{
+    background-color: rgba(136, 136, 136, 1);
+}

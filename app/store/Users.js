@@ -7,7 +7,7 @@ Ext.define('antoine.store.Users', {
         type: 'ajax',
         api: {
             read: 'data/users.json', // lis les données du fichier JSON 
-            update: 'data/updateUsers.json'// enregistre les données modifier dans un nouveau fichier json. 
+            update: 'data/users.json'// enregistre les données modifier dans un nouveau fichier json. 
         },
         reader: { // lecteur 
             type: 'json',
