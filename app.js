@@ -23,7 +23,7 @@ Ext.application({
             items: [
                 {
                     xtype: 'userlist',
-                    title: 'Users',
+                    title: 'Consultation liste des utilisateurs',
                     html : 'Consultation liste des utilisateurs'
                 }
             ]

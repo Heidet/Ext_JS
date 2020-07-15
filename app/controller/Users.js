@@ -38,7 +38,16 @@ Ext.define('antoine.controller.Users', {
     },
 
     updateUser: function(button) { // methode d'update information utilisateur. 
-        console.log('Bouton sauvegarder selectionner');
+        //console.log('Bouton sauvegarder selectionner');
+        var win    = button.up('window'), // obtien la référence de la fenetre à modifier . 
+            form   = win.down('form'), // obtien le formulaire 
+            record = form.getRecord(), // enregistrement valeurs tapé par l'user 
+            values = form.getValues(); // recupere la nouvelle valeurs 
+
+        record.set(values); // enregistrement des valeurs de la variable values 
+        win.close();    // close window 
+
+        this.getUsersStore().sync();// synchroniser le magasin après avoir édité l'enregistrement
     }, 
 
     editUser: function(grid, record) {

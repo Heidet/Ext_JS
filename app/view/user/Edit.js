@@ -2,9 +2,10 @@
 
 Ext.define('antoine.view.user.Edit', {
     extend: 'Ext.window.Window',
-    alias: 'widget.useredit',  // alias pour xtype  ( astuce nous pouvons passer a xtype directement. )
+    xtype: 'useredit',  // alias pour xtype  ( astuce nous pouvons passer a xtype directement. )
  
     title: 'Edit User',
+    
     layout: 'fit',
     autoShow: true,
 
@@ -22,6 +23,11 @@ Ext.define('antoine.view.user.Edit', {
                         xtype: 'textfield', // Type text input. 
                         name : 'email',
                         fieldLabel: 'Email'
+                    },
+                    {
+                        xtype: 'textfield', // Type text input. 
+                        name : 'phone',
+                        fieldLabel: 'telephone'
                     }
                 ]
             }
