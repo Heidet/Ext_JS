@@ -8,7 +8,7 @@ Ext.define('antoine.view.user.Edit', {
     layout: 'fit',
     autoShow: true,
 
-    initComponent: function() { // Composant d'ajout des utilisateurs. 
+    initComponent: function() { // Initialisation composant.
         this.items = [
             {
                 xtype: 'form', // xtype de formulaire. 
@@ -29,11 +29,11 @@ Ext.define('antoine.view.user.Edit', {
 
         this.buttons = [
             {
-                text: 'Save',
+                text: 'Sauvegarder',
                 action: 'save'
             },
             {
-                text: 'Cancel',
+                text: 'Quitter',
                 scope: this,  // porté 
                 handler: this.close // gestionnaire 
             } 
