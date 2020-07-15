@@ -5,7 +5,10 @@ Ext.define('antoine.view.user.Edit', {
     xtype: 'useredit',  // alias pour xtype  ( astuce nous pouvons passer a xtype directement. )
  
     title: 'Edit User',
-    
+    padding: 20,
+    border: 2,
+    width: 400,
+    height: 300,
     layout: 'fit',
     autoShow: true,
 
@@ -13,18 +16,23 @@ Ext.define('antoine.view.user.Edit', {
         this.items = [
             {
                 xtype: 'form', // xtype de formulaire. 
+                
                 items: [
                     {
+                        padding: 20,
                         xtype: 'textfield', // Type text input. 
                         name : 'name',
-                        fieldLabel: 'Name'
+                        fieldLabel: 'Name',
+                        
                     },
                     {
+                        padding: 20,
                         xtype: 'textfield', // Type text input. 
                         name : 'email',
                         fieldLabel: 'Email'
                     },
                     {
+                        padding: 20,
                         xtype: 'textfield', // Type text input. 
                         name : 'phone',
                         fieldLabel: 'telephone'
